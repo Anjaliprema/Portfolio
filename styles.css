@@ -1,0 +1,357 @@
+nav{
+    position:fixed;
+    top: 0%;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+}
+*{
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+body{
+    background-color: hsl(0, 0%, 3%);
+    color: #fff;
+}
+#home{
+    background-color: black;
+}
+.img{
+    width: 10px;
+    height: 5px;
+}
+
+.subcontainer{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content:space-around;
+}
+ul{
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0%;
+    display: flex;
+}
+.li{
+    display:inline;
+    margin-right: 20px;
+    margin-left: 5px;
+    margin-top: 8px;
+    width:90px; 
+    height: 40px;
+    font-size: 14px;
+    background-color: black;
+    color: white; 
+    border-radius: 15px;
+    border: 3px solid crimson;
+    box-shadow: 0px 4px 12px crimson; 
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.li:hover{
+    background-color: crimson;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    box-shadow: 0px 6px 20px crimson;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+#container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+#text{
+    margin-top: 70px;
+    margin-left: 130px;
+}
+.Resume{
+    width:150px; 
+    height: 40px;
+    font-size: 14px;
+    background-color: black;
+    color: white; 
+    border-radius: 20px;
+    border: 3px solid crimson;
+    box-shadow: 0px 4px 10px crimson; 
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.Resume:hover{
+   width: 160px;
+   height: 45px;
+   font-size: 20px;
+   background-color: crimson;
+   box-shadow: 0 6px 20px crimson;
+}
+.span:hover{
+    color: crimson;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+
+
+
+#about{
+    overflow: hidden;
+    background-image: url('images/lappics.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+    color: white;
+}
+#about::before{
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  background-color:rgba(0, 0, 0, 0.8);
+  z-index: 0; 
+}
+#about > div {
+  position: relative; 
+  z-index: 1;
+}
+.tab-titles{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    margin-left: 110px;
+}
+.tab-links{
+margin-right: 50px;
+font-size: 18px;
+font-weight: 500;
+cursor: pointer;
+position: relative;
+}
+.tab-links::after{
+content: '';
+width: 0;
+height: 3px;
+background: crimson;
+position: absolute;
+left: 0;
+bottom: -8px;
+}
+.tab-links.active-link{
+    font-size: 25px;
+}
+.tab-links.active-link::after{
+  width: 60px;
+}
+.cer{
+    margin-left: 20px;
+}
+.cer:hover{
+    
+    transition:all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+#skill{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.skill-row-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 90px;
+    margin-top: 40px;
+}
+.skill-row-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 90px;
+    margin-bottom: 42px;
+}
+.skill-1{
+    padding: +3%;
+    width: 240px;
+    height: 150px;
+    background-color: rgb(43, 40, 40);
+    color: white;
+    box-shadow: 0px 4px 12px crimson; 
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.skill-1:hover{
+    padding: +2%;
+    background-color: crimson;
+    box-shadow: 0px 4px 12px white; 
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+#project{
+    overflow: hidden;
+}
+#pro-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: 190px;
+}
+.project-lists{
+    width: 200px;
+    height: 270px;
+    background-color: rgb(43, 40, 40);
+    border-radius: 20px;
+}
+.project-lists-sm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: white; 
+    border-radius: 20px;
+    border: 3px solid crimson;
+    box-shadow: 1px 1px 5px crimson; 
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: 570px;
+}
+.project-lists-sm:hover{
+    background-color: crimson;
+    width: 160px;
+    height: 45px;
+    font-size: 20px;
+    background-color: crimson;
+    box-shadow: 0 6px 20px crimson;
+
+}
+.pro-image{
+    width: 200px;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px whitesmoke;
+    margin-bottom: 10px;
+
+}
+.pro-image:hover{
+    width: 210px;
+    height: 275px;
+    transition: all 0.3s ease-in-out;
+    transform:scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+#contact{
+    overflow: visible;
+    background-color: white;
+}
+#contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.get{
+    margin-left: 150px;
+    margin-top: 50px;
+    
+}
+.imga{
+    margin-left: 120px;
+}
+.girl-image-con{
+    width: 370px;
+    height:290px ;
+    border-radius: 7px;
+    margin-top: 40px;
+    margin-bottom: -100px;
+    box-shadow: 1px 1px 10px whitesmoke;
+}
+
+#contact-logo-container{
+    background-color: white;
+    width: 1230px;
+    height: 200px;
+}
+.fas1{
+    color: crimson;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.link-class{
+    margin-top: 30px;
+    margin-left: 190px;
+    display: flex;
+    gap: 30px;
+}
+.cus-font{
+  font-size: 36px;
+  color: black;
+}
+.is:hover{
+font-size: 45px;
+color: rgb(230, 45, 187);
+}
+.wp:hover{
+font-size: 45px;
+color: green;
+}
+.fb:hover{
+font-size: 45px;
+color: rgb(41, 41, 234);
+}
+.gt:hover{
+font-size: 45px;
+color: rgb(0, 0, 0);
+}
+.ln:hover{
+font-size: 45px;
+color: rgb(13, 106, 237);
+}
+.c1:hover{
+font-size: 27px;
+color: green;
+}
+.m1:hover{
+font-size: 27px;
+color: rgb(240, 170, 20);
+}
