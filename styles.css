@@ -80,6 +80,7 @@ a {
   margin-left: 130px;
 }
 .Resume {
+  margin-top:50px;
   width: 150px;
   height: 40px;
   font-size: 14px;
@@ -378,4 +379,5 @@ a {
   opacity: 1;
   transform: translateY(0);
 }
+
 
