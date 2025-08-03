@@ -73,7 +73,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 150px;
+  margin-top: 170px;
 }
 #text {
   margin-top: 70px;
@@ -110,7 +110,7 @@ a {
 
 #about {
   overflow: hidden;
-  background-image: url("images/lappics.jpg");
+  background-image: url("lappics.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -378,3 +378,4 @@ a {
   opacity: 1;
   transform: translateY(0);
 }
+
