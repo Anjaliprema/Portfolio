@@ -73,7 +73,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 160px;
+  margin-top: 130px;
 }
 #text {
   margin-top: 70px;
@@ -379,6 +379,7 @@ a {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 
